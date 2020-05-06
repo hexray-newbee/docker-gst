@@ -16,3 +16,7 @@ RUN pip3 install meson
 RUN apt-get update && \
   apt-get install -y \
   cargo
+
+RUN apt-get update && \
+  apt-get install -y \
+  libssl-dev
