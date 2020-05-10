@@ -20,3 +20,6 @@ RUN apt-get update && \
 RUN apt-get update && \
   apt-get install -y \
   libssl-dev
+
+# remove all package lists
+RUN rm -rf /var/lib/apt/lists/*
